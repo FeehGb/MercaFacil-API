@@ -4,10 +4,10 @@ services:
   mysql:
     image: mysql
     environment:
-    - MYSQL_ROOT_PASSWORD=admin
+    - MYSQL_ROOT_PASSWORD=root
     - MYSQL_DATABASE=admin
-    - MYSQL_USER=admin
-    - MYSQL_PASSWORD=admin
+    - MYSQL_USER=root
+    - MYSQL_PASSWORD=cedros
     - MYSQL_ROOT_HOST=%
     ports:
       - "3306:3306"
@@ -18,5 +18,5 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_PASSWORD: "admin"
-      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "cedros"
+      POSTGRES_USER: "postgres"
